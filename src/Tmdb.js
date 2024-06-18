@@ -21,7 +21,7 @@ const basicFetch = async (endpoint) => {
 const Tmdb = {
   getHomeList: async () => {
     try {
-      // Executa as chamadas individualmente e aguarda cada uma
+
       const originalsPromise = basicFetch("/discover/tv?with_network=213&language=pt-BR");
       const trendingPromise = basicFetch("/trending/all/week?language=pt-BR");
       const topRatedPromise = basicFetch("/movie/top_rated?language=pt-BR");
@@ -31,7 +31,7 @@ const Tmdb = {
       const romanceMoviesPromise = basicFetch("/discover/movie?with_genres=10749&language=pt-BR");
       const documentaryMoviesPromise = basicFetch("/discover/movie?with_genres=99&language=pt-BR");
 
-      // Aguarda todas as promessas serem resolvidas usando Promise.all
+
       const [
         originals,
         trending,
@@ -95,6 +95,9 @@ const Tmdb = {
           items: documentaryMovies,
         },
       ];
+      getMovieInfo: async (movieId) => {
+
+      }
 
       return data;
     } catch (error) {
@@ -103,5 +106,6 @@ const Tmdb = {
     }
   },
 };
+
 
 export default Tmdb;
