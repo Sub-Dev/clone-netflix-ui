@@ -7,6 +7,7 @@
 .movieRow--listarea {
   overflow-x: hidden ;
   padding-left: 30px;
+  
 }
 
 .movieRow--item {
@@ -24,7 +25,9 @@
 }
 .movieRow--list {
   transition: all ease 0.5s;
+  
 }
+
 
 .movieRow--left,.movieRow--right {
   position: absolute;
