@@ -3,21 +3,16 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import logo from '../images/netflix_logo.svg';
 import user from '../images/Netflix-avatar-3.png';
 import './Header.css';
-import { Hidden } from '@mui/material';
 
 const pages = ['Início', 'Séries', 'Filmes', 'Mais Recentes', 'Minha Lista'];
-const settings = ['Perfil', 'Conta', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   React.useEffect(() => {
@@ -38,23 +33,7 @@ function ResponsiveAppBar() {
     };
   }, []);
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <header>
@@ -81,7 +60,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={handleCloseNavMenu}
+                  onClick={() => { }}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                   className="header--menu-item"
                 >
@@ -103,28 +82,6 @@ function ResponsiveAppBar() {
               <IconButton className="header--user">
                 <Avatar alt="User Profile" src={user} variant="rounded" sx={{ width: 32, height: 32 }} />
               </IconButton>
-              <Menu
-                sx={{ mt: '45px' }}
-                id="menu-appbar"
-                anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              >
-                {settings.map((setting) => (
-                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
             </Box>
           </Toolbar>
         </Container>

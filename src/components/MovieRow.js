@@ -9,7 +9,7 @@ const MovieRow = ({ title, items }) => {
 
   useEffect(() => {
     if (items && items.results) {
-      const newListWidth = items.results.length * 150; // Considerando 150px de largura por item
+      const newListWidth = items.results.length * 150;
       setListWidth(newListWidth);
     }
   }, [items]);
@@ -23,7 +23,6 @@ const MovieRow = ({ title, items }) => {
   };
 
   const handleRightArrow = () => {
-    let containerWidth = window.innerWidth - 60; // Largura da janela - margem direita
     let x = scrollX - Math.round(window.innerWidth / 2);
 
     if (x < window.innerWidth - listWidth) {
