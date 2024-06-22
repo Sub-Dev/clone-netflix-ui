@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Netflix" title="NetflixClone" src=".github/logo.png" width="400px" />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align = "center" fontSize="60px">
+  Replica clone da interface UI da plataforma de streaming <a href="https://www.netflix.com/">Netflix</a>
+</h3>
 
-## Available Scripts
+<p align="center">
+  <img alt="Interface da aplicação" src=".github/screenshot.png" width="100%">
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img alt="Funcionamento da aplicação" src=".github/demo.gif" width="100%">
+</p>
 
-### `npm start`
+# Clone Netflix UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Desenvolvimento de um projeto de front-end utilizando HTML, CSS e JavaScript com a biblioteca React.js para replicar a interface do [Netflix](https://www.netflix.com/). Utilizei a [API TMDb](https://www.themoviedb.org/documentation/api) para obter todas as informações necessárias dos filmes, como título, descrição, capas, imagens de fundo e avaliações.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Veja o Projeto ou siga os passos abaixo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://sub-dev.github.io/clone-netflix-ui
 
-### `npm run build`
+## 🛠️ Construído com
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Tecnologias Utilizadas :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  [React.js](https://pt-br.reactjs.org/)
+-  [Material-UI](https://mui.com/material-ui/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Começando
 
-### `npm run eject`
+Faça um clone desse repositório e acesse o diretório.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+$ git clone git@github.com:LeeonardoVargas/netflix-clone.git && cd netflix-clone
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para ter acesso a API você precisará de uma chave, basta criar uma conta no TMDB para ter acesso, [TMDB](https://www.themoviedb.org/). Caminho da chave: **Perfil -> Configurações -> API -> Chave da API**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Renomeie o arquivo `.env.example` para `.env` e cole o valor da sua chave no campo **REACT_APP_API_KEY**. Agora instale as dependências e execute o projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Instalando as dependências
+$ npm install
 
-## Learn More
+# Executanto aplicação
+$ npm start
+```
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A página será recarregada quando você fizer alterações.\
+Você também pode ver erros de lint no console.
