@@ -35,7 +35,7 @@ https://sub-dev.github.io/clone-netflix-ui
 Faça um clone desse repositório e acesse o diretório.
 
 ```bash
-$ git clone git@github.com:LeeonardoVargas/netflix-clone.git && cd netflix-clone
+$ git clone https://github.com/Sub-Dev/clone-netflix-ui.git && cd clone-netflix-ui
 ```
 
 Para ter acesso a API você precisará de uma chave, basta criar uma conta no TMDB para ter acesso, [TMDB](https://www.themoviedb.org/). Caminho da chave: **Perfil -> Configurações -> API -> Chave da API**
