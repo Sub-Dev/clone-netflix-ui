@@ -50,12 +50,12 @@ const FeatureMovie = ({ item }) => {
             <div className="featured--description">{description}</div>
             <div className="featured--buttons">
               <Stack direction="row" spacing={1}>
-                <Button size="large" href={`/watch/${item.id}`}
+                <Button size="large" href={`/clone-netflix-ui/`}
                   className="featured--watchbutton"
                   variant="contained" color="primary" startIcon={<PlayArrowIcon style={{ fontSize: 30 }} />}>
                   Assistir
                 </Button>
-                <Button href={`/list/add/${item.id}`}
+                <Button href={`/clone-netflix-ui/`}
                   className="featured--mylistbutton"
                   variant="contained" color="secondary">
                   + Minha Lista

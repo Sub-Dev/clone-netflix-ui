@@ -44,7 +44,7 @@ function ResponsiveAppBar() {
           <Toolbar disableGutters>
             {/* Logo */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
-              <a href="/" className="header--logo">
+              <a href="/clone-netflix-ui/" className="header--logo">
                 <img src={logo} alt="Netflix Logo" />
               </a>
             </Box>
